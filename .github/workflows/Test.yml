@@ -3,7 +3,7 @@
 name: My_git_Hub_Basics
 env:
   APPLICATION_NAME: "Myflask"
-  PACAGE_NAME : "flask-deploy-ver-${{ github.sha }}
+  PACAGE_NAME : "flask-deploy-ver-${{ github.sha }}"
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
