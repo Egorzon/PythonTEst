@@ -38,4 +38,4 @@ jobs:
       - name: Print Hello Message
         run: echo Hello, worldkkkk!
       - name : Execure few commands
-        run : echo "Deploy name: ${{ env.PACAGE_NAME }}"
+        run : echo "Deploy pakcege name ${{ env.PACAGE_NAME }}"
