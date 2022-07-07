@@ -31,8 +31,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo "Appication name: ${{ env.APPLICATION_NAME }}"
-      -name: List current Folder
-      run: ls -la
+      - name: List current Folder
+        run: ls -la
   My_test_name:
     runs-on: ubuntu-latest
     needs: [My_testing] #Команда для последовательного запуска
