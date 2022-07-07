@@ -3,7 +3,7 @@
 name: My_git_Hub_Basics
 env:
   APPLICATION_NAME: "My_flask"
-  PACAGE_NAME : "flask_deploy_ver_$({ github.sha })
+  PACAGE_NAME : "flask-deploy-ver-${{ github.sha }}
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -36,6 +36,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo "Appication name: ${{ env.APPLICATION_NAME }}"
   My_test_name:
     runs-on: ubuntu-latest
     needs: [My_testing] #Команда для последовательного запуска
@@ -46,4 +47,4 @@ jobs:
         run : |
           echo "Hello Mesage1"
           echo "Hello Mesage2"
-          echo "Application name: ${{ env.APPLICATION_NAME }}"
+          echo "Deploy name: ${{ env.PACAGE_NAME }}"
